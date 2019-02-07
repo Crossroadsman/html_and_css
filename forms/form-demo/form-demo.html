@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta viewport="display-width initial-scale=1">
+    <title>Form Demo</title>
+  </head>
+
+  <body>
+    <h1>Form Demo</h1>
+    <p>Following is a demo form</p>
+    <form>
+      <fieldset>
+        <p><label>
+          <!-- You can nest an input inside a label, then you don't need to
+               use id/for -->
+          Example of text input
+          <input type="text">
+        </label></p>
+        <p>
+          <label for="slider">Slider</label>
+          <input id="slider" type="range" min="0" max="100" value="50" step="2">
+          <span id="slider-value-text"></span>
+        </p>
+        <p>
+          <label for="pet-select">Select the correct pet</label>
+          <select id="pet-select">
+            <optgroup label="Mammals">
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+            </optgroup>
+            <optgroup label="Arachnids">
+              <option value="scorpion">Scorpion</option>
+              <option value="spider">Spider</option>
+            </optgroup>
+            <optgroup label="Reptiles">
+              <option value="gecko">Gecko</option>
+              <option value="snake">Snake</option>
+            </optgroup>
+          </select>
+        </p>
+        <p>
+          You may choose one:
+          <label>
+            This
+            <!-- adding the `checked` attribute makes it the default selection -->
+            <input type="radio" name="radiogroup" value="this" checked>
+          </label>
+          <label>
+            That
+            <input type="radio" name="radiogroup" value="that">
+          </label>
+        </p>
+        <p>
+          You may choose several:
+          <!-- Note that `name` ends with brackets, which allows the responses
+               to be treated as an array (maybe PHP only???)
+          -->
+          <label>
+            Bacon
+            <input type="checkbox" name="breakfast[]" value="bacon">
+          </label>
+          <label>
+            Hash browns
+            <input type="checkbox" name="breakfast[]" value="hash-browns">
+          </label>
+          <label>
+            Mushrooms
+            <input type="checkbox" name="breakfast[]" value="mushrooms">
+          </label>
+        </p>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Controls with limited support</legend>
+        <label for="color-picker">Colour Picker</label>
+        <input id="color-picker" type="color" value="#6fbc6d">
+        <label for="date-picker">Date Picker</label>
+        <input id="date-picker" type="date">
+      </fieldset>
+      <!-- See: https://css-tricks.com/use-button-element/ for when to use
+      the button tag vs when to use input type=button -->
+      <!-- Note that inside a form, all buttons have a default type of 'submit'
+      (outside of forms they have the default type of 'normal') -->
+      <button>Submit</button>
+    </form>
+
+    <script src="form-demo.js"></script>
+  </body>
+
+
+</html>
