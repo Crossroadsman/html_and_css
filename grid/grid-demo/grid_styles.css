@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+}
+
+.grid-item-1 {
+    grid-area: header;
+    background-color: rgba(0, 0, 255, 0.8);
+}
+
+.grid-item-2 {
+    grid-area: main;
+    background-color: rgba(255, 255, 0, 0.8);
+}
+
+.grid-item-3 {
+    grid-area: sidebar;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.grid-item-4 {
+    grid-area: footer;
+    background-color: rgba(0, 255, 0, 0.8);
+}
