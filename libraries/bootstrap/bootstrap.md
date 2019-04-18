@@ -19,3 +19,14 @@ Treehouse Courses
 -----------------
 [Bootstrap 4 Basics](https://teamtreehouse.com/library/bootstrap-4-basics-2)
 
+
+General
+-------
+
+### Breakpoints ###
+
+- `xs` (default): < 576px
+- `sm`: < 768px
+- `md`: < 992px
+- `lg`: < 1200px
+- `xl`: >= 1200px
